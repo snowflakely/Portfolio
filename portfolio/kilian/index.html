@@ -1,0 +1,372 @@
+<!--
+Fullpage 240707 v2.2.17
+본 홈페이지에서 제공하는 모든 자료는 저작권법에 의하여 보호받는 저작물로서 이에 대한 무단 복제 및 배포를 원칙적으로 금합니다.
+이를 무단 사용·복제·배포하는 경우 저작권법 제136조, 137조, 138조에 의한 권리의 침해죄, 부정발행 등의 죄, 출처명시위반의 죄 등에 해당될 수 있습니다.
+Powered by DINO D&D Studio.
+ⓒ 2024 DINO D&D Studio. All Rights Reserved.
+-->
+<!doctype html>
+<html lang="en" class="loading">
+<head>
+<meta charset="UTF-8">
+<title>Kilian</title>
+    <meta name="viewport" content="width=1440, user-scalable=yes, target-densityDpi=medium-dpi">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/fontawesome_all.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="shorcut icon" type="img/ico" href="img/favicon_w.ico" media="(prefers-color-scheme: dark)">
+    <link rel="shorcut icon" type="img/ico" href="img/favicon.ico" media="(prefers-color-scheme: light)">
+</head>
+<body class="locked not_yet" style="opacity: 0; overflow: hidden;">
+    <div id="header">
+        <a class="logo" href="javascript:;"><img src="img/logo_kilian.svg"></a>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Perfumes</li>
+            <li>Lip</li>
+            <li>Gift bar</li>
+            <li>Kilian Party</li>
+            <li>Online service</li>
+        </ul>
+    </div>
+	<div id="fullpage">
+		<div id="visual" class="fullsection full1 dt_ptn" pageNum="1">
+            <iframe id="yt_video" class="ratio_1x1" src=""></iframe>
+            <script type="text/javascript">
+                var $yt = $("#yt_video"),
+                    yt_video_url = "rRqhmF3CH10",
+                    yt_video_start = 2,
+                    yt_video_repeat_duration = 33,
+                    yt_src= "https://www.youtube.com/embed/"+yt_video_url+"?start="+yt_video_start+"&autoplay=1&mute=1",
+                    yt_fade_time = 500;
+                $yt.attr("src", yt_src);
+                setInterval(function(){
+                    $yt.stop().fadeOut(yt_fade_time, function(){
+                        $yt.attr("src", yt_src);
+                        setTimeout(function(){
+                            $yt.stop().fadeIn(yt_fade_time);
+                        }, yt_fade_time);
+                    });
+                }, yt_video_repeat_duration * 1000);
+            </script>
+            <div class="copy">&copy; 2024 Kilian paris All Rights Reserved. Powered by Snowflakely.</div>
+            <div class="full_con center">
+                <div class="title_con itc">
+                    <h3>by</h3>
+                    <h1>Kilian</h1>
+                    <h4>paris</h4>
+                </div>
+            </div>
+		</div>
+		<div id="perfumes" class="fullsection full2 hide" pageNum="2">
+            <ul class="panels"></ul>
+		</div>
+		<div id="lip" class="fullsection full3 hide" pageNum="3">
+            <div class="full_con">
+                <div class="title_con">
+                    <h3>Lipsticks</h3>
+                    <h2>Le Rouge Parfum</h2>
+                    <h4>Discover our makeup range with our collection of scented lipsticks<br>Le Rouge Parfum</h4>
+                    <h5>Let yourself be tempted by our scented Le Rouge Parfum lipsticks, in both bullet and liquid versions,<br>with a mat or satin finish. Find the color that suits you best, whether pink, classic red, dark red or nude,<br>with our virtual try on feature.</h5>
+                    <div class="btn_con">
+                        <a href="javascript:;">
+                            <span>View more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="gift_bar" class="fullsection full4 hide" pageNum="4">
+            <div class="full_sub_con" data-index="1">
+                <div class="full_sub holiday dt_ptn">
+                <div class="full_con">
+                    <ul class="v_con two_con">
+                        <li class="cells"></li><!--
+                         --><li class="cells">
+                                <div class="title_con">
+                                    <h3>Gift Bar</h3>
+                                    <h2>Holiday Collection</h2>
+                                    <h4>Find the perfect present filled with holiday magic for everyone on your list!</h4>
+                                    <h5>Delight and thrill this season with our exclusive, limited-edition Holiday Collection<br>a perfect blend of festive elegance and seasonal charm.<br>Each carefully crafted piece brings warmth, joy, and sparkle to your celebrations,<br>making every moment unforgettable. Don&#39;t miss out on these timeless treasures,<br>available only for a short time!</h5>
+                                </div>
+                                <ul class="v_con gift_tab three_con">
+                                    <li class="cells selected">
+                                        <a href="javascript:;">
+                                            <img src="img/img_gift_bar_0_0.webp">
+                                        </a>
+                                    </li><!--
+                                    --><li class="cells">
+                                        <a href="javascript:;">
+                                            <img src="img/img_gift_bar_0_1.webp">
+                                        </a>
+                                    </li><!--
+                                    --><li class="cells">
+                                        <a href="javascript:;">
+                                            <img src="img/img_gift_bar_0_2.webp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="full_sub valentine dt_ptn hide">
+                    <div class="full_con">
+                        <ul class="v_con two_con">
+                            <li class="cells">
+                                <div class="title_con">
+                                    <h3>Gift Bar</h3>
+                                    <h2>Valentine&#39;s collection</h2>
+                                    <h4>Express your love the way you feel it and spoil your loved one on this special occasion.</h4>
+                                    <h5>Discover our curated gift selection and find the perfect scented creation.<br>With a variety of enchanting fragrances to choose from, you&#39;re sure to uncover a<br>special gift that will delight and captivate those you cherish.</h5>
+                                </div>
+                                <ul class="v_con gift_tab three_con">
+                                    <li class="cells selected">
+                                        <a href="javascript:;">
+                                            <img src="img/img_gift_bar_1_0.webp">
+                                        </a>
+                                    </li><!--
+                                    --><li class="cells">
+                                        <a href="javascript:;">
+                                            <img src="img/img_gift_bar_1_1.webp">
+                                        </a>
+                                    </li><!--
+                                    --><li class="cells">
+                                        <a href="javascript:;">
+                                            <img src="img/img_gift_bar_1_2.webp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li><!--
+                         --><li class="cells"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="full_sub mother dt_ptn hide">
+                    <div class="full_con">
+                        <ul class="v_con two_con">
+                            <li class="cells"></li><!--
+                             --><li class="cells">
+                                    <div class="title_con">
+                                        <h3>Gift Bar</h3>
+                                        <h2>Mother&#39;s Collection</h2>
+                                        <h4>Discover our selection of iconic scented creations to honor the<br>unconditional love and strength of mothers on this cherished day.
+                                        <h4>
+                                        <h5>Styled as though seen from an elevated perspective, champagne-golden beams of light slice<br>through the night, radiating from the summit of the tower. This stunning display creates a<br>captivating optical effect, where the interplay of angles and perspective transforms the scene<br>into a mesmerizing dance of light and shadow.</h5>
+                                    </div>
+                                    <ul class="v_con gift_tab three_con">
+                                        <li class="cells selected">
+                                            <a href="javascript:;">
+                                                <img src="img/img_gift_bar_2_0.webp">
+                                            </a>
+                                        </li><!--
+                                        --><li class="cells">
+                                            <a href="javascript:;">
+                                                <img src="img/img_gift_bar_2_1.webp">
+                                            </a>
+                                        </li><!--
+                                        --><li class="cells">
+                                            <a href="javascript:;">
+                                                <img src="img/img_gift_bar_2_2.webp">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="rhombus btn btn_left">
+                <i class="fa-regular fa-regular fa-angle-left"></i>
+            </div>
+            <div class="rhombus btn btn_right">
+                <i class="fa-regular fa-regular fa-angle-right"></i>
+            </div>
+        </div>
+		<div id="party" class="fullsection full5 hide" pageNum="5">
+            <div class="full_con">
+                <div class="title_con">
+                    <h3>Enjoy</h3>
+                    <h2>Party With Kilian</h2>
+                    <h4>Kilian Paris invites you into its nightlife universe.</h4>
+                    <h5>Get ready to celebrate the KILIAN way by finding the look that suits you best.<br>Enjoy our cocktail recipes and our playlist for a night to remember!</h5>
+                </div>
+                <ul class="v_con four_con">
+                    <li class="cells">
+                        <a href="javascript:;">
+                            <img src="img/img_party_0.webp">
+                        </a>
+                        <div class="btn_con btn_a">
+                            <a href="javascript:;">
+                                <span>Get&nbsp;The&nbsp;Look</span>
+                            </a>
+                        </div>
+                    </li><!--
+                 --><li class="cells">
+                        <a href="javascript:;">
+                            <img src="img/img_party_1.webp">
+                        </a>
+                        <div class="btn_con btn_a">
+                            <a href="javascript:;">
+                                <span>Cooktail&nbsp;Recipes</span>
+                            </a>
+                        </div>
+                    </li><!--
+                 --><li class="cells">
+                        <a href="javascript:;">
+                            <img src="img/img_party_2.webp">
+                        </a>
+                        <div class="btn_con btn_a">
+                            <a href="javascript:;">
+                                <span>Kilian&#39;s&nbsp;Playlist</span>
+                            </a>
+                        </div>
+                    </li><!--
+                 --><li class="cells">
+                        <a href="javascript:;">
+                            <img src="img/img_party_3.webp">
+                        </a>
+                        <div class="btn_con btn_a">
+                            <a href="javascript:;">
+                                <span>The&nbsp;Kilian&nbsp;Bar</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<div id="online_service" class="fullsection full6 hide dt_ptn" pageNum="6">
+            <div class="full_con">
+                <div class="title_con">
+                    <h3>Best</h3>
+                    <h2>Online Service</h2>
+                    <h4>Meet three services: Sample Discovery Set, Engraving, and Perfume finder.</h4>
+                    <h5>In the pursuit of offering the best service,<br>KILIAN PARIS proposes a wide range of online services for you to enjoy your online experience.</h5>
+                </div>
+                <div class="right_con">
+                    <div class="rhombus_con horizontal tab_btn">
+                        <a href="javascript:;" class="rhombus">
+                            <img src="img/img_online_0.webp">
+                            <div class="text_con">
+                                <h4>Sample&nbsp;Discovery&nbsp;Set</h4>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="rhombus">
+                            <img src="img/img_online_1.webp">
+                            <div class="text_con">
+                                <h4>Perfume&nbsp;finder</h4>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="rhombus">
+                            <img src="img/img_online_2.webp">
+                            <div class="text_con">
+                                <h4>Engraving</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="selected_con">
+                <div class="full_con">
+                    <div class="title_con">
+                        <h3>Online service</h3>
+                        <h2>Sample Discovery Set</h2>
+                        <h4>For any Sample Discovery set ordered, receive by email a<br>gift voucher of 26€&#42; to redeem on your next online order.</h4>
+                        <h5>Dive into KILIAN PARIS&#39; scented universe with the Sample Discovery Set and discover 5 most<br>iconic perfumes or personalize your own samples assortment with the Customisable Set.</h5>
+                    </div>
+                    <div class="sample">
+                        <ul class="v_con four_con">
+                            <li class="cells">
+                                <img class="inner_sample" src="img/img_sample_0_inner.webp">
+                                <img src="img/img_sample_0.webp">
+                            </li><!--
+                         --><li class="cells">
+                                <img class="inner_sample" src="img/img_sample_1_inner.webp">
+                                <img src="img/img_sample_1.webp">
+                            </li><!--
+                         --><li class="cells">
+                                <img class="inner_sample" src="img/img_sample_2_inner.webp">
+                                <img src="img/img_sample_2.webp">
+                            </li><!--
+                         --><li class="cells">
+                                <img class="inner_sample" src="img/img_sample_3_inner.webp">
+                                <img src="img/img_sample_3.webp">
+                        </ul>
+                    </div>
+                    <div class="btn_close rhombus btn">
+                        <i class="fa-regular fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="full_con">
+                    <div class="title_con center">
+                        <h3>Online service</h3>
+                        <h2>Perfume Finder</h2>
+                        <h4>Discover which KILIAN PARIS scented creation is made for you or<br>spoil your loved ones with the perfect gift.</h4>
+                        <h5>&#34;I believe in having an arsenal of scents. I choose my scent of the day<br>based on my mood, the way I am dressed and the personality I want to project.&#34;</h5><br>
+                        <h6>&#45; Kilian Hennessy &#45;</h6>
+                    </div>
+                    <div class="rhombus_con vertical finder_list"></div>
+                    <div class="btn_close rhombus btn">
+                        <i class="fa-regular fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="full_con">
+                    <div class="title_con">
+                        <h3>Online service</h3>
+                        <h2>Engraving</h2>
+                        <h4>Make your perfume bottle unique by adding a personal touch, to spoil yourself or your<br>loved ones!</h4>
+                        <h5>Add a personalized engraving or custom design to your perfume bottle for a truly unique touch. Whether it's your initials,<br>a meaningful date, or a special message, this thoughtful detail makes the perfect gift for yourself or someone<br>you cherish. Elevate the experience and make every spritz feel personal and extraordinary.</h5>
+                        <h6>When you engrave a gift you can choose from two elegant fonts for your personal message,<br>special date or initials.</h6>
+                    </div>
+                    <div class="right_con">
+                        <div class="rhombus_con horizontal engraving">
+                            <a href="javascript:;" class="rhombus">
+                                <div class="text_con">
+                                    <h5>Option 1</h5>
+                                    <h4>Block Font</h4>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="rhombus">
+                                <img src="img/img_online_1.webp">
+                                <div class="text_con">
+                                    <h5>Shop to</h5>
+                                    <h4>Collection</h4>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="rhombus">
+                                <div class="text_con">
+                                    <h5>Option 2</h5>
+                                    <h4 class="itc">Script Font</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn_close rhombus btn">
+                        <i class="fa-regular fa-arrow-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <b>1</b><span>/</span><span></span>
+        </div>
+		<div class="quick"><ul></ul></div>
+        <ul class="sns">
+            <li class="btn">
+                <i class="fa-brands fa-facebook-f"></i>
+            </li><!--
+         --><li class="btn">
+                <i class="fa-brands fa-instagram"></i>
+            </li><!--
+         --><li class="btn">
+                <i class="fa-brands fa-youtube"></i>
+            </li>
+        </ul>
+	</div>
+</body>
+</html>

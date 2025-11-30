@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.tab_menu{}
+.tab_menu > ul.tab_btn{ position: relative; width: 100%; color: var(--color-k-075); text-align: center; margin-bottom: var(--mrgn-x4);}
+/*버튼 기준 잡기*/
+.tab_menu > ul.tab_btn li h4{ font-weight: 600;}
+/*탭 버튼 안의 글씨 두께*/
+.tab_menu > ul.tab_btn:before{ position: absolute; content: ''; width: 125%; background: linear-gradient(180deg, var(--color-point) 1%, transparent 45%); height: var(--mrgn-x4);  top: 100%; pointer-events: none; left: -12.5%; -webkit-mask-image: linear-gradient(90deg, transparent 1%, var(--color-main) 10%, var(--color-main) 88%, transparent 99%); mask-image: linear-gradient(90deg, transparent 1%, var(--color-main) 10%, var(--color-main) 88%, transparent 99%);}
+/*버튼 아래 그라데이션 바*/
+.tab_menu > ul.tab_btn > li,
+#location.tab_menu > ul.tab_btn > li{ position: relative; display: inline-block; text-align: center; height: 50px; cursor: pointer; z-index: 2; border-radius: var(--mrgn-half); line-height: 50px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }.tab_menu > ul.tab_btn > li{ position: relative; display: inline-block; text-align: center; width: 33.333%; height: 50px; cursor: pointer; z-index: 2; border-radius: var(--mrgn-half); line-height: 50px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+/*버튼 꾸미기*/
+.tab_menu > ul.tab_btn > li{ width: 33.333%;}
+#location.tab_menu > ul.tab_btn > li{ width: 16.666%;}
+/*버튼 크기*/
+.tab_menu > ul.tab_btn > li.slider,
+#location.tab_menu > ul.tab_btn > li.slider{ position: absolute; background: var(--color-point); pointer-events: none; z-index: 1; transition: all 200ms ease-in-out;}
+/*슬라이더 꾸미기*/
+.tab_menu > ul.tab_btn > li.slider{ left: 295px;}
+/*슬라이더 위치잡기*/
+.tab_menu > ul.tab_btn > li.slider:before,
+.tab_menu > ul.tab_btn > li.slider:after{ position: absolute; content: ''; height: var(--mrgn-half); width: var(--mrgn-half);  background: var(--color-point); bottom: 0; opacity: 1;}
+/*슬라이더 아래 가장자리 돌아나가기*/
+.tab_menu > ul.tab_btn > li.slider:before{ left: calc(var(--mrgn-half) * -1); background: radial-gradient(circle at 0% 0%, transparent var(--mrgn-half), var(--color-point) var(--mrgn-half));}
+/*슬라이더 아래 가장자리 돌아나가기 왼쪽*/
+.tab_menu > ul.tab_btn > li.slider:after{ right: calc(var(--mrgn-half) * -1); background: radial-gradient(circle at 100% 0%, transparent var(--mrgn-half), var(--color-point) var(--mrgn-half));}
+/*슬라이더 아래 가장자리 돌아나가기 오른쪽*/
+.tab_menu > ul.tab_btn > li h4{ margin-top: 0; height: var(--mrgn-2); line-height: var(--mrgn-2);}
+/*버튼 글씨*/
+.tab_menu > ul.tab_btn > li.selected{ color: var(--color-w); cursor: default; pointer-events: none;}
+/*선택된 버튼*/
+.tab_menu ul.tab_btn li:hover h4{ color: var(--color-k);}
+/*버튼 호버시 글씨*/
+.tab_menu > ul.tab_content{}
+.tab_menu > ul.tab_content > li{ display: none;}
+/*탭 메뉴 아래 콘텐츠 안보이기*/
+.tab_menu > ul.tab_content > li.selected{ display: block;}
+/*선택된 탭 메뉴 콘텐츠 보이기*/
+.tab_menu > ul.tab_cate_content > li{}
+
+.tab_menu.li.cate_1 > ul.tab_content > li,
+.tab_menu.li.cate_2 > ul.tab_content > li,
+.tab_menu.li.cate_3 > ul.tab_content > li{ display: none; overflow: hidden;}
+/*카테고리 탭 메뉴 아래 콘텐츠 안보이기*/
+.tab_menu > ul.tab > li,
+.tab_menu.cate_1 > ul.tab_content > li.cate_b,
+.tab_menu.cate_2> ul.tab_content > li.cate_c,
+.tab_menu.cate_3 > ul.tab_content > li.cate_g{ display: inline-block; overflow: none;}
+/*선택한 카테고리 탭 메뉴 아래 콘텐츠 보이기*/
+#location.tab_menu.cate_1 > ul.v_con > li.cells > ul.tab_content > li,
+#location.tab_menu.cate_2 > ul.v_con > li.cells > ul.tab_content > li,
+#location.tab_menu.cate_3 > ul.v_con > li.cells > ul.tab_content > li,
+#location.tab_menu.cate_4 > ul.v_con > li.cells > ul.tab_content > li,
+#location.tab_menu.cate_5 > ul.v_con > li.cells > ul.tab_content > li,
+#location.tab_menu.cate_6 > ul.v_con > li.cells > ul.tab_content > li{ display: none; overflow: hidden;}
+/*로케이션섹션 선택한 카테고리 탭 메뉴 아래 콘텐츠 안보이기*/
+.tab_menu > ul.tab > li,
+#location.tab_menu.cate_1 > ul.v_con > li.cells > ul.tab_content > li.cate_af,
+#location.tab_menu.cate_2 > ul.v_con > li.cells > ul.tab_content > li.cate_as,
+#location.tab_menu.cate_3 > ul.v_con > li.cells > ul.tab_content > li.cate_sa,
+#location.tab_menu.cate_4 > ul.v_con > li.cells > ul.tab_content > li.cate_eu,
+#location.tab_menu.cate_5 > ul.v_con > li.cells > ul.tab_content > li.cate_me,
+#location.tab_menu.cate_6 > ul.v_con > li.cells > ul.tab_content > li.cate_na{ display: inline-block;}
+/*로케이션섹션 선택한 카테고리 탭 메뉴 아래 콘텐츠 보이기*/

@@ -1,0 +1,843 @@
+<!doctype html>
+<html class="custom_cursor loading">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+        <meta name="format-detection" content="telephone=no">
+        <title>Black Myth: Wukong</title>
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/fontawesome_all.min.css">
+        <link type="text/css" rel="stylesheet" href="css/common.css">
+        <link type="text/css" rel="stylesheet" href="css/btns.css">
+        <link type="text/css" rel="stylesheet" href="css/tab_menu_slider.css">
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+        <link type="text/css" rel="stylesheet" href="css/animaiton.css">
+        <link type="text/css" rel="stylesheet" href="css/responsive.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/loading.js"></script>
+        <script type="text/javascript" src="js/wait_scroll.js"></script>
+        <script type="text/javascript" src="js/tab_menu_slider.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="img/favicon.ico" rel="shorcut icon" type="image/x-icon">
+    </head>
+    <body class="not_yet">
+        <div class="wrap" style="overflow: hidden; opacity: 0;">
+            <div id="header" class="sections section_00">
+                <div class="width_con">
+                    <div class="nav_cover"></div>
+                    <!-- 왼쪽 어두운 화면 -->
+                    <img class="bg_h" src="img/bg_header.webp">
+                    <a href="index.html" class="btn_home default">
+                        <img src="img/logo_header.webp">
+                    </a>
+                    <a href="index.html" class="btn_home small">
+                        <img src="img/logo_header_small.webp">
+                    </a>
+                    <div class="btn_open_nav"><div></div></div>
+                    <!-- mobile 네비게이션 -->
+                    <ul class="nav_gnb">
+                        <li><a href="javascript:;">Game Science</a></li>
+                        <li><a href="javascript:;">Player support</a></li>
+                        <li class="v_divider">|</li>
+                        <li><a href="javascript:;"><img class="icon_h" src="img/icon_language.webp"></a></li>
+                    </ul>
+                    <ul class="nav_lnb">
+                        <li><a href="#visual">Home</a></li>
+                        <li><a href="#key_features">Key Features</a></li>
+                        <li><a href="#characters">Characters</a></li>
+                        <li><a href="#maps">Maps</a></li>
+                        <li><a href="#soundtrack">Soundtrack</a></li>
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="javascript:;" class="buy"><span>Buy now</span></a></li>
+                    </ul>
+                    <script>
+                        $(".btn_open_nav, .nav_cover, #header a").click(function(){
+                            // 햄버거,x 버튼, 왼쪽어두운화면,네비게이션 섹션 클릭시
+                            $("body").toggleClass("open_nav");
+                            // body에 open_nav class 있을때 빼고 없을 때 넣어주기
+                        });
+                    </script>
+                </div>
+            </div>
+            <div id="footer" class="sections section_12">
+                <div class="air_bubbles_con"></div>
+                <div class="width_con">
+                    <div class="company">
+                        <img src="img/logo_wukong.webp"><br>
+                        <img src="img/logo_gamesience.webp">
+                        <img src="img/logo_snowflakely.svg">
+                        <h4>Published & Developed by GAME SCIENCE</h4>
+                        <h5 class="presentation">
+                            <a href="javascript:;">Careers</a>
+                            <a href="javascript:;">About</a>
+                            <a href="javascript:;">Support</a>
+                            <a href="javascript:;">Contact Us</a>
+                            <a href="javascript:;">Press</a>
+                            <a href="javascript:;">API</a>
+                            <a href="javascript:;">IGR</a>
+                        </h5>
+                        <div style="margin-bottom: calc(var(--mrgn) * -1);"></div>
+                        <h6 class="presentation">
+                            <a href="javascript:;">Privocy</a>
+                            <a href="javascript:;">Legal</a>
+                            <a href="javascript:;">Terms</a>
+                            <a href="javascript:;">Cookie policy</a>
+                            <a href="javascript:;">Cookie settings</a>
+                        </h6>
+                        <div class="copy">
+                            <h5><b>&copy;2024 Game Science Interactive Technology Co., Ltd. All Rights Reserved.</b>Powered by snowflakely.</h5>
+                            <h6>All trademarks referenced herein are the properties of their respective owners.</h6>
+                        </div>
+                        <div class="age_notice">
+                            <img src="img/logo_esrb.svg">
+                            <img src="img/logo_age_esrb.svg">
+                            <img src="img/logo_pegi.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="visual" class="sections section_01 ratio_16x9">
+                <div class="bg_visual">
+                    <video class="top fire" preload="true" loop autoplay muted playsinline>
+                        <source src="img/visual_fire.webm" type="video/webm">
+                        <source src="img/visual_fire.mp4" type="video/mp4">
+                    </video>
+                    <video class="bottom fire" preload="true" loop autoplay muted playsinline>
+                        <source src="img/visual_fire.webm" type="video/webm">
+                        <source src="img/visual_fire.mp4" type="video/mp4">
+                    </video>
+                    <img class="bg_01" src="img/visual_img_00.webp">
+                    <img class="bg_06" src="img/visual_img_01.webp">
+                    <img class="l_second bg_02" src="img/visual_img_03.webp">
+                    <img class="l_first bg_03" src="img/visual_img_04.webp">
+                    <img class="l_leaf_under bg_05" src="img/visual_img_05.webp">
+                    <img class="r_second bg_02" src="img/visual_img_06.webp">
+                    <img class="r_first bg_03" src="img/visual_img_07.webp">
+                    <img class="l_leaf_top bg_04" src="img/visual_img_08.webp">
+                    <img class="r_leaf bg_05" src="img/visual_img_09.webp">
+                    <div class="w_con">
+                        <img class="wukong" src="img/visual_img_02.webp">
+                        <div class="h_con">
+                            <div class="hl_01 h">
+                                <img src="img/visual_img_02_hl_01.webp">
+                                <div class="hl_02 h">
+                                    <img src="img/visual_img_02_hl_02.webp">
+                                    <div class="hl_03 h">
+                                        <img src="img/visual_img_02_hl_03.webp">
+                                        <div class="hl_04 h">
+                                            <img src="img/visual_img_02_hl_04.webp">
+                                            <div class="hl_05 h">
+                                                <img src="img/visual_img_02_hl_05.webp">
+                                                <div class="hl_06 h">
+                                                    <img src="img/visual_img_02_hl_06.webp">
+                                                    <div class="hl_07 h">
+                                                        <img src="img/visual_img_02_hl_07.webp">
+                                                        <div class="hl_08 h">
+                                                            <img src="img/visual_img_02_hl_08.webp">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr_01 h">
+                                <img src="img/visual_img_02_hr_01.webp">
+                                <div class="hr_02 h">
+                                    <img src="img/visual_img_02_hr_02.webp">
+                                    <div class="hr_03 h">
+                                        <img src="img/visual_img_02_hr_03.webp">
+                                        <div class="hr_04 h">
+                                            <img src="img/visual_img_02_hr_04.webp">
+                                            <div class="hr_05 h">
+                                                <img src="img/visual_img_02_hr_05.webp">
+                                                <div class="hr_06 h">
+                                                    <img src="img/visual_img_02_hr_06.webp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fog_con">
+                    <div class="fog_img fog_first"></div>
+                    <div class="fog_img fog_second"></div>
+                </div>
+                <div class="width_con">
+                    <div class="title_con center">
+                        <img class="v_icon" src="img/icon_visual.webp">
+                        <img class="v_logo" src="img/logo_visual.webp">
+                        <h2 class="img_text">Black Myth: Wukong</h2>
+                        <h1>Confront  destiny</h1>
+                        <div class="btn_con center">
+                            <a class="btn btn_a medium" href="javascript:;">
+                                <span>Buy now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="story" class="sections section_02 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <div class="title_con center">
+                        <h3>Adventures</h3>
+                        <h2>A tale retold</h2>
+                        <h4>Discover heartfelt tales behind every facade taste.<br>The love, hate, greed, and fury they once held and still carry within.</h4>
+                        <h5>After successfully escorting Tripitaka and retrieving the Buddhist scriptures, Sun Wukong ascends the mountain, but eventually rejects immortality<br>in order to live in peace on Mount Huaguo. However, the Heavenly Palace is furious that Sun Wukong does not follow their orders, and sends an<br>army led by Yirangjinjun to force him to return to the court. Sun Wukong duels with Yirangjinjun, but is ultimately defeated and sealed in a stone.<br>However, just before he is sealed, Sun Wukong divides his power into six roots—six souls—and hides them.</h5>
+                        <br>
+                        <h6>Over the next several centuries, the monkeys of Mount Huaguo send many young warriors to retrieve the relic so that they can<br>resurrect and free Sun Wukong. One of those monkeys, Tianmingzi, begins his adventure in search of the relic</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="key_features" class="sections section_03 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <div class="title_con">
+                        <h3>About Black Myth : Wukong</h3>
+                        <h2>Key Features</h2>
+                        <h4>The high power and reputation of the legendary enemies is what<br>they want to test you with. Fighting various monsters with various<br>aliens is one of the attractive points of journey to the west.</h4>
+                        <h5>Unleashed magic and extreme knowledge will take your abilities to infinite levels. Taoism, shape-shifting,<br>and treasures have long been adorned with the battles of Chinese mythology. Master these opposing yet<br>complementary forces.</h5>
+                        <div id="tab_scroll_point"></div>
+                    </div>
+                    <div class="tab_con">
+                        <ul class="video_tab">
+                            <li class="btn_vdtb selected" onclick="location.href='#tab_scroll_point';">
+                                <img class="vdtb_box" src="img/keyfeatures_vdtb_box_common.webp">
+                                <img class="vdtb_icon" src="img/keyfeatures_vdtb_staff.svg">
+                                <h4>Staff&nbsp;Stances</h4>
+                            </li><!--
+                         --><li class="btn_vdtb" onclick="location.href='#tab_scroll_point';">
+                                <img class="vdtb_box" src="img/keyfeatures_vdtb_box_common.webp">
+                                <img class="vdtb_icon" src="img/keyfeatures_vdtb_masic.svg">
+                                <h4>Mysticism</h4>
+                            </li><!--
+                         --><li class="btn_vdtb" onclick="location.href='#tab_scroll_point';">
+                                <img class="vdtb_box" src="img/keyfeatures_vdtb_box_common.webp">
+                                <img class="vdtb_icon" src="img/keyfeatures_vdtb_transform.svg">
+                                <h4>Transformations</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="video ratio_16x9">
+                        <div class="frame"></div>
+                        <div class="iframe_con">
+                            <div id="iframe_box"></div>
+                        </div>
+                        <div class="text_con">
+                            <h3>Staff Stances</h3>
+                            <h5>There are three Staff Stances in Black Myth: Wukong.<br>They are Smash Stance, Pillar Stance and Thrust Stance.<br>Each of the stances have their own skill tree that costs Sparks to upgrade and enhances the stance.<br>There is also a Talent tree that can enhance other aspects of the combat.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="web_score" class="sections section_04 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <div class="reflect">
+                        <img src="img/web_score_reflect_img.webp">
+                        <img src="img/web_score_reflect_img.webp">
+                    </div>
+                    <div class="title_con center">
+                        <h3>Best Games of 2024</h3>
+                        <h2>Praise</h2>
+                        <h4>With breathtaking concept art, stunning graphics and sceneries, wonderful score,<br>and one of the most fulfilling playabilities we've seen in role-playing games.</h4>
+                        <h5>Black Myth: Wukong is unquestionably a Game Of &nbsp;The Year candidate,<br>promising a bright future for the genre's fans.</h5>
+                    </div>
+                </div>
+                <div class="awards_con center">
+                    <ul class="awards_track">8.5@Worth Playing,8.5@Wccftech,9.3@Voxel,8.3@Vandal,9@Twinfinite,9.5@TechRaptor,8.7@PCGamer,9@Malditos Nerds,9@INVEN,10@IGN China,8.5@IGN Brasil,8@IGN,9@Hardcore Gamer,10@God is a Geek,9.5@CGMagazine,10@GamersRD,10@Gamersky,8@GameBlast,8.5@Everyeye.it,9.5@ERBING,9.3@COGconnected,10@GamingBolt,9.3@Areajugones,9.8@ali213,9@A9VG,10@3DM</ul>
+                </div>
+            </div>
+            <div id="characters" class="sections section_05 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <ul class="v_con two_con">
+                        <li class="cells">
+                        </li><!--
+                     --><li class="cells">
+                            <div class="title_con">
+                                <h3>Unforgettable</h3>
+                                <h2>Characters</h2>
+                                <h4>Memorable characters of Black Myth: Wukong<br>Become the Destined One and meet a variety of characters.</h4>
+                                <h5>Uncover the stories each character holds. Beneath the fierce appearances of your enemies,<br>you’ll find fascinating stories about their origins, personalities, and motivations.</h5>
+                            </div>
+                        </li><!--
+                     --><li class="cells sticky">
+                            <div class="brush_small">
+                                <img src="img/characters/characters_brush.webp">
+                                <span class="chinese">孙悟空</span>
+                            </div>
+                            <img class="big_img" src="img/characters/characters_sun_wukong_big.webp">
+                            <ul class="v_con">
+                                <li class="cells box">
+                                    <div class="title_con c_info">
+                                        <img class="brush" src="img/characters/characters_brush_big.webp">
+                                        <h3>Sun Wukong</h3>
+                                        <div class="stroke"></div>
+                                        <h4>Also known as the Monkey King, is a literary and religious figure<br>best known as one of the main characters in the 16th century<br>Chinese novel Journey to the West.</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="blur"></div>
+                        </li><!--
+                     --><li class="cells">
+                            <ul class="v_con three_con character_list"></ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="maps" class="sections section_06 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="bg">
+                    <div class="bg_img"></div>
+                </div>
+                <div class="width_con">
+                    <ul class="v_con two_con">
+                        <li class="cells"></li><!--
+                     --><li class="cells">
+                            <div class="title_con">
+                                <h3>A lively</h3>
+                                <h2>Maps</h2>
+                                <h4>Explore a vast land full of wonders.</h4>
+                                <h5>With every step you take in a world no one has ever seen before, a new sight unfolds.<br>Dive into a fascinating space of ancient Chinese mythology filled with surprises and discoveries!</h5>
+                            </div>
+                        </li><!--
+                     --><li id="map_ex" class="cells">
+                            <h4>The region is divided into three areas,<br>being Forest of Wolves,<br>Bamboo Grove, and Blackwind Cave.<br>The Black Wind Mountain is home to many Yaoguai,<br>but the most common enemies you will face here are Wolf Spirits.</h4>
+                        </li><!--
+                     --><li id="map_btn" class="cells"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contents" class="sections section_07 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <div class="title_con center">
+                        <h3>Other</h3>
+                        <h2>Contents</h2>
+                        <h4>Wukong reinterprets Journey to the West.</h4>
+                        <h5>Check out the graphical highlights, captivating concept art, expansive map design, and exciting trailer.</h5>
+                    </div>
+                    <div class="tab_menu">
+                        <div class="tab_btn_con">
+                            <ul class="tab_btn">
+                                <li class="selected">
+                                    <h3>Unreal Engine5</h3>
+                                </li><!--
+                             --><li>
+                                    <h3>Screenshots</h3>
+                                </li><!--
+                             --><li>
+                                    <h3>Concept art</h3>
+                                </li><!--
+                             --><li>
+                                    <h3>Media</h3>
+                                </li><!--
+                             --><li class="slider"></li>
+                            </ul>
+                        </div>
+                        <ul class="tab_contents">
+                            <li class="cells ratio_2x1 selected">
+                                <img src="img/contents_unreal.webp">
+                                <div class="text_con">
+                                    <h4>Create dynamic snow using Unreal Engine’s Virtual Heightfield Mesh (VHM).The VHM itself can add more detail to the terrain.<br>Combined with high-qualitytextures, you can create relatively realistic-looking snowscapes.</h4>
+                                </div>
+                            </li><!--
+                         --><li class="cells ratio_2x1">
+                                <img src="img/contents_scr.webp">
+                                <div class="text_con">
+                                    <h4>They will come across beautiful scenery. Naturally, Some players will want to capture such moments.<br>Black Myth: Wukong has a Photo Mode, Allowing players to snap a picture whenever they want.</h4>
+                                </div>
+                            </li><!--
+                         --><li class="cells ratio_2x1">
+                                <img src="img/contents_concept.webp">
+                                <div class="text_con">
+                                    <h4>The concept art, The combination of traditional elements with the technology and aesthetics of modern design results in characters<br>and scenes with clean lines and visual clarity, while possessing a unique oriental flavor. </h4>
+                                </div>
+                            </li><!--
+                         --><li class="cells ratio_2x1">
+                                <div class="c_video">
+                                    <iframe src="https://www.youtube.com/embed/1xGiPUeevCM" class="ratio_1x1"></iframe>
+                                </div>
+                                <div class="text_con">
+                                    <h4>Explore a Land of Vast Wonders. Relive the tale of Journey to the West, rewriting a mythical legend.<br>Check out the cinematic footage of Wukong.</h4>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="tab_frame"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="soundtrack" class="sections section_08 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="bg_img"></div>
+                <div class="width_con">
+                    <div class="title_con">
+                        <h3>Soundtrack</h3>
+                        <h2>The best<br>experience</h2>
+                        <h4>Created by the best production team.<br>We have achieved tremendous growth outside of games to provide<br>the best dynamic immersion beyond simple games.</h4>
+                        <h5>Featuring settings and characters drawn from the classic fantasy novel Journey to the West,<br>blockbuster action RPG Black Myth: Wukong has a soundtrack befitting its epic scope.</h5>
+                    </div>
+                    <ul class="v_con music_box">
+                        <li class="cells box">
+                            <ul class="v_con two_con">
+                                <li class="cells">
+                                    <div class="album_disk">
+                                        <img class="rotate_disk" src="img/soundtrack_disk_00.webp" style="transform: rotate(0deg);">
+                                        <img src="img/soundtrack_disk_lighting.webp">
+                                    </div>
+                                    <div class="album_cover"></div>
+                                </li><!--
+                             --><li class="cells">
+                                    <div class="media_info">
+                                        <h3>Black Myth: Wukong<br>Original Soundtrack</h3>
+                                        <h5>- The Soundtrack from Black Myth: Wukong all in one playlistm<br>- 4 CD Set / 28p FULL color Liner notes</h5>
+                                        <h5><b>BGM / 71 Songs / 3 hours, 45 minutes / August 20, 2024</b></h5>
+                                        <h5>These are rousing anthems and haunting Mandopop ballads-as well as 30 score selections that blend folk elements and evocative orchestration, conjuring up the game's sweeping landscapes, fierce boss battles and thrilling escapades inspired by the Monkey King.</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="player">
+                                <div class="song_info">
+                                    <h4 class="song_title">Black Myth Wukong Main Title</h4>
+                                    <h5 class="song_maker">Lin Zhe</h5>
+                                </div>
+                                <div class="song_time">
+                                    <h6 class="last_time">00:00</h6>
+                                    <input type="range" class="song_time" max="100" min="0" step="1" value="0">
+                                    <h6 class="left_time">5:05</h6>
+                                </div>
+                                <a href="javascript:;">
+                                    <i class="fa-light fa-shuffle mini"></i>
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-backward"></i>
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-forward"></i>
+                                </a>
+                                <a href="javascript:;">
+                                    <i class="fa-light fa-repeat mini"></i>
+                                </a>
+                                <div class="sound">
+                                    <a href="javascript:;">
+                                        <i class="fa-solid fa-volume mini vol"></i>
+                                    </a>
+                                    <input type="range" class="range" max="100" min="0" step="1">
+                                </div>
+                                <div class="function">
+                                    <a href="javascript:;">
+                                        <i class="fa-light fa-airplay mini"></i>
+                                    </a>
+                                    <a href="javascript:;">
+                                        <i class="fa-light fa-signal-stream mini"></i>
+                                    </a>
+                                    <a href="javascript:;">
+                                        <i class="fa-light fa-share-nodes mini"></i>
+                                    </a>
+                                    <a href="javascript:;">
+                                        <i class="fa-light fa-ellipsis mini"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="music_list">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <span>#</span>
+                                            </td>
+                                            <td>
+                                                <span>Title</span>
+                                            </td>
+                                            <td>
+                                                <span>Artist</span>
+                                            </td>
+                                            <td>
+                                                <span>
+                                                    <i class="fa-solid fa-clock"></i>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div class="ost_list"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="product" class="sections section_09 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <div class="title_con">
+                        <h3>Products</h3>
+                        <h2>Edition<br>Content</h2>
+                        <h4>Venture through breathtaking landscapes in the classic<br>tale of Journey to the West, creating a new epic of uncharted adventures.</h4>
+                        <h5>You will uncover the stories behind a variety of characters, delving beyond your battles with them,<br>to taste the love and hate, greed and fury they once had and still carry with them.</h5>
+                    </div>
+                    <ul class="v_con four_con">
+                        <li class="cells box pr_box">
+                            <a href="javascript:;">
+                                <ul class="v_con">
+                                    <li class="cells">
+                                        <div class="platform">
+                                            <div class="top">
+                                                <i class="fa-brands fa-steam pl_icon"></i>
+                                                <img class="pl_icon" src="img/product_pl_icon_0.webp">
+                                            </div>
+                                            <div class="bottom">
+                                                <img class="pl_icon" src="img/product_pl_icon_1.webp">
+                                                <img class="pl_icon" src="img/product_pl_icon_2.webp">
+                                            </div>
+                                        </div>
+                                        <img src="img/product_img_00.jpg">
+                                    </li><!--
+                                 --><li class="cells">
+                                        <h4 class="pr_title">Digital<br>standard edition</h4>
+                                        <h6>Physical / Digital</h6>
+                                        <h4 class="price">49<span>.11</span></h4>
+                                        <h5>Include</h5>
+                                        <div class="b_line"></div>
+                                        <ul class="v_con">
+                                            <li class="cells">
+                                                <h5 class="first">Black Myth</h5>
+                                                <h5 class="second">&colon;</h5>
+                                                <h5 class="third">Wukong full game</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li><!--
+                     --><li class="cells box pr_box">
+                            <a href="javascript:;">
+                                <ul class="v_con">
+                                    <li class="cells">
+                                        <div class="platform">
+                                            <div class="top">
+                                                <i class="fa-brands fa-steam pl_icon"></i>
+                                                <img class="pl_icon" src="img/product_pl_icon_0.webp">
+                                            </div>
+                                            <div class="bottom">
+                                                <img class="pl_icon" src="img/product_pl_icon_1.webp">
+                                                <img class="pl_icon" src="img/product_pl_icon_2.webp">
+                                            </div>
+                                        </div>
+                                        <img src="img/product_img_01.jpg">
+                                    </li><!--
+                                 --><li class="cells">
+                                        <h4 class="pr_title">Digital<br>Deluxe Edition</h4>
+                                        <h6>Physical / Digital</h6>
+                                        <h4 class="price">59<span>.80</span></h4>
+                                        <h5>Include</h5>
+                                        <div class="b_line"></div>
+                                        <ul class="v_con">
+                                            <li class="cells">
+                                                <h5 class="first">Black Myth</h5>
+                                                <h5 class="second">&colon;</h5>
+                                                <h5 class="third">Wukong full game</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5 class="first point">Weapon</h5>
+                                                <h5 class="second">&colon;</h5>
+                                                <h5 class="third">Bronzecloud staff</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5 class="first point">Equipment</h5>
+                                                <h5 class="second">&colon;</h5>
+                                                <h5 class="third">Folk opera set<br><span>(mask, almsgiving armor leather bracers, buskins)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5 class="first point">Curio</h5>
+                                                <h5 class="second">&colon;</h5>
+                                                <h5 class="third">Wind chimes</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Selected digital soundtrack</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li><!--
+                     --><li class="cells box pr_box">
+                            <a href="javascript:;">
+                                <ul class="v_con">
+                                    <li class="cells">
+                                        <div class="platform">
+                                            <i class="fa-brands fa-steam pl_icon"></i>
+                                        </div>
+                                        <img src="img/product_img_02.jpg">
+                                    </li><!--
+                                 --><li class="cells">
+                                        <h4 class="pr_title">Deluxe<br>Edition</h4>
+                                        <h6>Physical PC verison</h6>
+                                        <h4 class="price">169<span>.80</span></h4>
+                                        <h5>Include</h5>
+                                        <div class="b_line"></div>
+                                        <ul class="v_con">
+                                            <li class="cells">
+                                                <h5>Steel case</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Steam digital deluxe edition activation code</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>The constricting headband<br><span>(1:1 scale, bronze)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Chaos at the peach<br><span>(color print on silk scroll)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Wind chime<span>&nbsp;(necklace)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Thunderstone<span>&nbsp;(ring)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Gold sun crow<span>&nbsp;(pin)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Stamps and postcard</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Warranty certificate</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li><!--
+                     --><li class="cells box pr_box">
+                            <a href="javascript:;">
+                                <ul class="v_con">
+                                    <li class="cells">
+                                        <div class="platform">
+                                            <i class="fa-brands fa-steam pl_icon"></i>
+                                        </div>
+                                        <img src="img/product_img_03.jpg">
+                                    </li><!--
+                                 --><li class="cells">
+                                        <h4 class="pr_title">Collector's<br>edition</h4>
+                                        <h6>Physical PC verison</h6>
+                                        <h4 class="price">400<span>.32</span></h4>
+                                        <h5>Include</h5>
+                                        <div class="b_line"></div>
+                                        <ul class="v_con">
+                                            <li class="cells">
+                                                <h5>Steel case</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Steam digital deluxe edition activation code</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Confront destiny -<br>Protagonist figurine 40 cm</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Teaching of the heart sutra<br><span>(color print on silk scroll)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Wind chime<span>&nbsp;(necklace)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Thunderstone<span>&nbsp;(ring)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Gold sun crow<span>&nbsp;(pin)</span></h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Stamps and postcard</h5>
+                                            </li>
+                                            <li class="cells">
+                                                <h5>Warranty certificate</h5>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="news" class="sections section_10 wait_scroll">
+                <div class="show_trigger"></div>
+                <div class="width_con">
+                    <ul class="v_con rub_two_con">
+                        <li class="cells">
+                            <ul class="v_con news"></ul>
+                        </li><!--
+                     --><li class="cells">
+                            <div class="title_con">
+                                <h3>Community</h3>
+                                <h2>News</h2>
+                                <h4>Get the latest news quickly.</h4>
+                                <h5>Black Myth: Wukong will do its best to maintain a more comfortable<br>gaming experience through quick communication with users.</h5>
+                                <div class="btn_con w">
+                                    <a class="btn btn_a medium" href="javascript:;">
+                                        <span>See all News</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="specification" class="sections section_11">
+                <div class="width_con">
+                    <ul class="v_con semi_two_con">
+                        <li class="cells">
+                            <div class="title_con no_b">
+                                <h3 class="no_b">System requirements</h3>
+                            </div>
+                        </li><!--
+                     --><li class="cells">
+                            <h5>
+                                <span>
+                                    <img src="img/logo_windows11.svg" width="20px">
+                                    Windows
+                                </span>
+                            </h5>
+                            <ul class="v_con two_con">
+                                <li class="cells">
+                                    <h4>Minimum requirements</h4>
+                                    <dl>
+                                        <dt>Operating system</dt>
+                                        <dd>64-bit Windows&reg; 10 version 1909 or newer</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Processor</dt>
+                                        <dd>Intel Core i5-8400 / AMD Ryzen 5 1600</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Video</dt>
+                                        <dd>NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 580 8GB DirectX&reg; 11 compatible system</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Memory</dt>
+                                        <dd>16 GB RAM</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Storage</dt>
+                                        <dd>130 GB available space</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Sound card</dt>
+                                        <dd>Windows Compatible Audio Device</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Additional Notes</dt>
+                                        <dd>HDD Supported, SSD Recommended. The above specifications were tested with DLSS/FSR/XeSS enabled.</dd>
+                                    </dl>
+                                </li><!--
+                             --><li class="cells">
+                                    <h4>Recommended specifications</h4>
+                                    <dl>
+                                        <dt>Operating system</dt>
+                                        <dd>64-bit Windows&reg; 10 version 1909 or newer</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Processor</dt>
+                                        <dd>Intel Core i7-9700 / AMD Ryzen 5 5500</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Video</dt>
+                                        <dd>NVIDIA GeForce RTX 2060 or AMD Radeon RX 5700 XT or INTEL Arc A750 DirectX&reg; 12 compatible system</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Memory</dt>
+                                        <dd>16 GB RAM</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Storage</dt>
+                                        <dd>130 GB available space</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Sound card</dt>
+                                        <dd>Windows Compatible Audio Device</dd>
+                                    </dl><!--
+                                 --><dl>
+                                        <dt>Additional Notes</dt>
+                                        <dd>SSD Required. The above specifications were tested with DLSS/FSR/XeSS enabled.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blackhole"></div>
+                <div class="width_con">
+                    <ul class="v_con semi_two_con">
+                        <li class="cells">
+                            <div class="title_con no_b">
+                                <h3 class="no_b">Product details</h3>
+                            </div>
+                        </li><!--
+                     --><li class="cells">
+                            <ul class="v_con three_con">
+                                <li class="cells">
+                                    <dl>
+                                        <dt>Genre</dt>
+                                        <dd>Action, Adventure, RPG</dd>
+                                    </dl><!--
+                                --> <dl>
+                                        <dt>Platforms</dt>
+                                        <dd>Windows</dd><!--
+                                     --><dd>Xbox Series X|S</dd><!--
+                                     --><dd>PlayStation&reg;5</dd>
+                                    </dl>
+                                </li><!--
+                             --><li class="cells">
+                                    <dl>
+                                        <dt>Available languages</dt>
+                                        <dd>简体中文</dd><!--
+                                     --><dd>繁體中⽂</dd><!--
+                                     --><dd>English</dd><!--
+                                     --><dd>日本語</dd><!--
+                                     --><dd>한국어</dd><!--
+                                     --><dd>Français</dd><!--
+                                     --><dd>Deutsch</dd><!--
+                                     --><dd>Español</dd>
+                                    </dl>
+                                </li><!--
+                             --><li class="cells">
+                                    <dl>
+                                        <dt>Age Rating</dt>
+                                        <dd style="width: auto; height: 9em; margin-right: 1em;">
+                                            <img src="img/logo_age_esrb.svg">
+                                        </dd><!--
+                                     --><dd>Blood and Gore</dd><!--
+                                     --><dd>Intense Violence</dd><!--
+                                     --><dd>Language</dd><!--
+                                     --><dd>In-Game Purchases</dd><!--
+                                     --><dd>Users Interact</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spacer">
+                <img src="img/bg_spacer.webp">
+            </div>
+        </div>
+        <div id="loading_cover">
+            <div class="loading_icon"></div>
+        </div>
+    </body>
+</html>

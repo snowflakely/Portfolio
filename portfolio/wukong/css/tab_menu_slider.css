@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.tab_menu{ position: relative;}
+.tab_menu > .tab_btn_con{ position: relative; width: calc(var(--basic-width) - calc(var(--basic-width) / 2) + var(--mrgn-x8)); height: max-content; overflow-x: auto; left: 50%; transform: translateX(-50%); mask-image: linear-gradient(90deg, transparent 0%, var(--color-k) 5%, var(--color-k) 95%, transparent 100%);}
+.tab_menu > .tab_frame{ position: absolute; width: calc(var(--basic-width) - calc(var(--basic-width) / 2) + var(--mrgn-x8)); height: 110%; top: 0; left: 50%; transform: translateX(-50%); background: url(../img/contents_tap_l.webp), url(../img/contents_tap_c.webp), url(../img/contents_tap_r.webp); background-repeat: no-repeat; background-size: 105px 57px, calc(100% - 100px) 57px, 105px 57px; background-position: 0% 0%, 50% 0%, 100% 0%; pointer-events: none; z-index: 2;}
+.tab_menu > .tab_btn_con > ul.tab_btn{ position: relative; width: 100%; min-width: max-content; color: var(--color-k-075); margin-bottom: var(--mrgn-x4); text-align: center;}
+/*버튼 기준 잡기*/
+.tab_menu > .tab_btn_con > ul.tab_btn li h3{ font-weight: 500;}
+/*탭 버튼 안의 글씨 두께*/
+.tab_menu > .tab_btn_con > ul.tab_btn > li{ position: relative; display: inline-block; text-align: center; height: 50px; z-index: 2; border-radius: var(--mrgn-half); line-height: 50px; padding: 0 var(--mrgn); border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+/*버튼 꾸미기*/
+/*버튼 크기*/
+.tab_menu > .tab_btn_con > ul.tab_btn > li.slider{ position: absolute; background: linear-gradient(0deg, var(--color-k) 0%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, var(--color-k) 5%, var(--color-k) 95%, transparent 100%); pointer-events: none; z-index: 1; transition: all 200ms ease-in-out;}
+/*슬라이더 꾸미기*/
+.tab_menu > .tab_btn_con > ul.tab_btn > li.slider{ left: 295px; mask-image: url(../img/icon_brush.svg);}
+/*슬라이더 위치잡기*/
+.tab_menu > .tab_btn_con > ul.tab_btn > li h3{ color: var(--color-w); margin-top: 0; height: var(--mrgn-2); line-height: var(--mrgn-2);}
+/*버튼 글씨*/
+.tab_menu > .tab_btn_con > ul.tab_btn > li.selected{ color: var(--color-w); pointer-events: none;}
+/*선택된 버튼*/
+.tab_menu > ul.tab_contents{}
+.tab_menu > ul.tab_contents > li{ display: none;}
+/*탭 메뉴 아래 콘텐츠 안보이기*/
+.tab_menu > ul.tab_contents > li.selected{ display: block;}
+/*선택된 탭 메뉴 콘텐츠 보이기*/
+.tab_menu > ul.tab_cate_contents > li{}
+
+.tab_menu.li.cate_1 > ul.tab_contents > li,
+.tab_menu.li.cate_2 > ul.tab_contents > li,
+.tab_menu.li.cate_3 > ul.tab_contents > li,
+.tab_menu.li.cate_4 > ul.tab_contents > li{ display: none; overflow: hidden;}
+/*카테고리 탭 메뉴 아래 콘텐츠 안보이기*/

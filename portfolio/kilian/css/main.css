@@ -1,0 +1,206 @@
+@charset "UTF-8";
+#visual.full1{ aspect-ratio: 16/9;}
+#visual.full1 > iframe{ position: absolute; top: 50%; left: 0; width: 100%; pointer-events: none; transform: translateY(-50%); aspect-ratio: 1/1;}
+#visual.full1 > .full_con{}
+#visual.full1 > .full_con > .title_con{ top: 50%; transform: translateY(-50%);}
+#visual.full1 > .full_con > .title_con > h3{ font-size: 3.5em; margin: 0;}
+#visual.full1 > .full_con > .title_con > h1{ font-size:  11em; margin: 0 0 0 -7px;}
+#visual.full1 > .full_con > .title_con > h4{ font-size: 3em; margin: -28px 0 0 0;}
+html.loading body.not_yet #visual.full1 > .full_con > .title_con > h1{ opacity: 0; filter: blur(6px);}
+body.not_yet #visual.full1 > .full_con > .title_con > h1{ opacity: 1; filter: blur(0); transition: all 700ms ease-in-out 200ms;}
+html.loading body.not_yet #visual.full1 > .full_con > .title_con > h3,
+html.loading body.not_yet #visual.full1 > .full_con > .title_con > h4{ opacity: 0; transform: scale(2); filter: blur(6px);}
+body.not_yet #visual.full1 > .full_con > .title_con > h3,
+body.not_yet #visual.full1 > .full_con > .title_con > h4{ opacity: 1; transform: scale(1); filter: blur(0); transition: all 700ms ease-in-out;}
+body.not_yet #visual.full1 > .full_con > .title_con > h3{ transition-delay: 400ms;}
+body.not_yet #visual.full1 > .full_con > .title_con > h4{ transition-delay: 600ms;}
+#visual.full1 > .full_con > .title_con > h4:before{ display: none;}
+#perfumes.full2{}
+#perfumes.full2 > .panels{ display: inline-block; width: 100vw; height: 100vh; list-style: none;}
+#perfumes.full2 > .panels > li{ position: relative; float: left; width: 20%; height: inherit; cursor: pointer;}
+#perfumes.full2 > .panels > li > div.panel{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-left: 5%; transition: all 250ms ease-out;}
+#perfumes.full2 > .panels > li.hover{ z-index: 1;}
+#perfumes.full2 > .panels > li.on {cursor: default;}
+#perfumes.full2 > .panels > li.on div.panel{ transition: all 350ms ease-out !important;}
+#perfumes.full2 > .panels > li.on,
+#perfumes.full2 > .panels > li:hover{ z-index: 2;}
+#perfumes.full2 > .panels > li:hover div.panel{ width: 120%; margin-left: -10%; box-shadow: 0 10px 30px -10px rgba(0,0,0,1); transition: all 250ms ease-out;}
+#perfumes.full2 > .panels > li:first-child:hover div.panel{ margin-left: 0%;}
+#perfumes.full2 > .panels > li:last-child:hover div.panel{ margin-left: -20%;}
+#perfumes.full2 > .panels > li > div.panel{ background: var(--color-k);}
+#perfumes.full2 > .panels > li > div.panel > .bg_panel{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; transition: all 500ms ease-in-out; pointer-events: none;}
+#perfumes.full2 > .panels > li > div.panel > .bg_panel > h3.dt_ptn:before{ opacity: 0; transition: all 500ms ease-in-out;}
+#perfumes.full2 > .panels > li.on > div.panel > .bg_panel > h3.dt_ptn:before{ opacity: .2; transition: all 500ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .bg_panel:before{ content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: var(--color-k-065); opacity: 0; transition: all 500ms ease-in-out;}
+#perfumes.full2 > .panels > li.on > div.panel > .bg_panel:before{ opacity: 1; transition: inherit;}
+#perfumes.full2 > .panels > li.on > div.panel > .bg_panel{ opacity: 1; transition: inherit; pointer-events: auto;}
+#perfumes.full2 > .panels > li:hover > div.panel > .bg_panel{ opacity: 1; transition: all 250ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .bg_panel > h3{ position: absolute; width: 100vw; height: 100vh; text-align: center; line-height: calc(100vh - 200px); box-sizing: border-box; -webkit-backdrop-filter: blur(0); backdrop-filter: blur(0); left: 0; top: 0; font-size: 3.375em; opacity: 0; background: inherit; background-size: inherit; -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 1em var(--color-w-025), 0 0 0.2em var(--color-w-025); transition: backdrop-filter 500ms ease-in-out; z-index: 1;}
+#perfumes.full2 > .panels > li.on > div.panel > .bg_panel > h3{ -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); opacity: 1; font-size: 12em; line-height: calc(100vh - 720px); pointer-events: auto; transition: all 500ms ease-in-out 500ms, opacity 500ms ease-in-out 500ms;}
+#perfumes.full2 > .panels > li.hover > div.panel > .bg_panel > h3{ pointer-events: none;}
+#perfumes.full2 > .panels > li > div.panel > .panel_cover{ position: absolute; top: 50%; left: 50%; margin-top: -160px; transform: translateX(-50%);}
+#perfumes.full2 > .panels > li > div.panel > .panel_cover > h3{ position: absolute; display: inline-block; width: inherit; font-size: 3.375em; text-shadow: 0 0 6px var(--color-k-075); opacity: 1; top: 50%; left: 50%; margin: 195px 0 0 -65px; transition: all 300ms ease-in-out;}
+#perfumes.full2 > .panels > li.on > div.panel > .panel_cover > h3{ opacity: 0; pointer-events: none; transition: all 400ms ease-in-out 300ms;}
+#perfumes.full2 > .panels > li > div.panel > .panel_cover > h3:before{ content: ''; position: absolute; top: 100%; left: 0; width: calc(100% + var(--mrgn)); height: 1px; background: linear-gradient(90deg, transparent, var(--color-w), transparent); border-radius: 50%;}
+#perfumes.full2 > .panels > li > div.panel > .panel_cover > img{ width: 266px; opacity: 1; transition: all 250ms ease-in-out;}
+#perfumes.full2 > .panels > li.on > div.panel > .panel_cover > img,
+#perfumes.full2 > .panels > li:hover > div.panel > .panel_cover > img{ opacity: 0; transition: all 400ms ease-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con{ }
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con{ background: var(--color-k-035); opacity: 0; pointer-events: none; transition: all 300ms ease-in-out; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); overflow: hidden; z-index: 1;}
+#perfumes.full2 > .panels > li.on > div.panel > .inner_con > .full_con{ opacity: 1; pointer-events: auto; transition: all 500ms ease-in-out 1200ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con{}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > img{ opacity: 1; transition: all 350ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > img{ opacity: 0; transition: all 350ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells:last-child{ box-sizing: border-box; padding-right: var(--mrgn-x2);}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells:first-child{ mask-image: linear-gradient(90deg, black 85%, transparent 100%);}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > img{}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con{ height: 370px;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h3,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h2,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h4,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h5,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con> ul.v_con.two_con > li.cells > .title_con > .btn_con{ opacity: 1; transition: all 500ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h3,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h2,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h4,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h5,
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > .btn_con{ opacity: 0; transition: all 500ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h3{transition-delay: 100ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h2{transition-delay: 200ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h4{transition-delay: 300ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > h5{transition-delay: 400ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.hide > ul.v_con.two_con > li.cells > .title_con > .btn_con{transition-delay: 500ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h3{ margin-top: var(--mrgn-x2); transition-delay: 150ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h2{ margin-bottom: var(--mrgn); transition-delay: 300ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h4{ margin-bottom: var(--mrgn-x2); transition-delay: 450ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h4:before{ content: ''; position: absolute; top: 100%; left: 0; margin-top: var(--mrgn); width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--color-w), transparent); border-radius: 50%;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h4 > b{}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > h5{ transition-delay: 600ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > .btn_con{ transition-delay: 750ms;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > .btn_con > a{}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > .title_con > .btn_con > a > span{}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con{ margin-top: var(--mrgn-x3) !important;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells{ aspect-ratio: 1/1; opacity: 1; transition: all 350ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells.hide{ aspect-ratio: 1/1; opacity: 0; transition: all 350ms ease-in-out;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con.ptn > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells{ pointer-events: none;}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells > a{}
+#perfumes.full2 > .panels > li > div.panel > .inner_con > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells > a > img{ width: 100%;}
+#perfumes.full2 > .panels > li div.panel > .btn_close{ opacity: 0; transition: all 250ms ease-in-out; pointer-events: none; cursor: default;}
+#perfumes.full2 > .panels > li.on div.panel > .btn_close{ opacity: 1; transition: all 500ms ease-in-out 1500ms; pointer-events: auto; cursor: pointer; z-index: 99;}
+#perfumes.full2 > .panels > li div.panel > .btn_close > i{}
+#perfumes.full2 > .panels > li div.panel > .btn_close:hover > i{}
+
+
+#lip.full3{ background: radial-gradient(#0f0e14, #131017);}
+#lip.full3:before{ content: 'LIP'; position: absolute; top: 30%; left: 15%; width: 50%; height: 50%; text-transform: uppercase; font-size: 500px; color: #340a14; text-align: center; font-family: "Edwardian Script ITC";}
+#lip.full3:after{ content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/img_lip.webp) no-repeat 80% 40% / 800px;}
+#lip.full3 > .full_con > .title_con{ top: 47%;}
+#gift_bar.full4{ }
+#gift_bar.full4 > .full_sub_con{}
+#gift_bar.full4 > .full_sub_con > .full_sub:before{ opacity: .7; mask-image: linear-gradient(270deg, black 0,  transparent 50%);}
+#gift_bar.full4 > .full_sub_con > .full_sub:nth-child(2):before{ opacity: .7; mask-image: linear-gradient(90deg, black 0, transparent 50%);}
+#gift_bar.full4 > .full_sub_con > .full_sub:after{ content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--color-k); mask-image: linear-gradient(270deg, black 0,  transparent 80%);}
+#gift_bar.full4 > .full_sub_con > .full_sub:nth-child(2):after{ mask-image: linear-gradient(90deg, black 0, transparent 40%);}
+#gift_bar.full4 > .full_sub_con > .full_sub{}
+#gift_bar.full4 > .full_sub_con > .full_sub.holiday{   background: url(../img/bg_holiday.webp)   no-repeat 50% 50% / cover;}
+#gift_bar.full4 > .full_sub_con > .full_sub.valentine{ background: url(../img/bg_valentine.webp) no-repeat 50% 50% / cover;}
+#gift_bar.full4 > .full_sub_con > .full_sub.mother{    background: url(../img/bg_mother.webp)    no-repeat 50% 50% / cover;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con{ position: relative; z-index: 1;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > .title_con{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > .title_con > h3{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > .title_con > h2{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > .title_con > h4{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > .title_con > h5{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con{ width: 100%; background: var(--color-k-035); margin: var(--mrgn-x2) 0 0 0 !important;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells{ aspect-ratio: 1/1; width: 33.333%; margin: 0; text-align: center;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells.selected{ pointer-events: none;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells > a{}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells > a:before{ content: ''; position: absolute; top: 14px; left: 14px; width: calc(100% - 28px); height: calc(100% - 28px); box-shadow: inset 0 0 0 2px var(--color-w-025); opacity: 0; transition: all 250ms ease-in-out;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells > a:hover:before{opacity: .5; transition: all 250ms ease-in-out;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells.selected > a:before{ opacity: 1; transition: all 250ms ease-in-out;}
+#gift_bar.full4 > .full_sub_con > .full_sub > .full_con > ul.v_con.two_con > li.cells > ul.v_con.three_con > li.cells > a > img{ width: 75%; margin-top: 30px;}
+#party.full5{}
+#party.full5:before{ content: 'PARTY'; position: absolute; top: 30%; left: -10%; width: 50%; height: 50%; text-transform: uppercase; font-size: 500px; color: #000011; text-align: center; font-family: "Edwardian Script ITC"; opacity: .4;}
+#party.full5 > .full_con:before{ content: ''; position: absolute; width: 50%; height: 130%; top: 0; left: 50%; background: url(../img/bg_cocktail.webp) no-repeat 50% 0 / contain;}
+#party.full5 > .full_con > .title_con{}
+#party.full5 > .full_con > .title_con > h3{}
+#party.full5 > .full_con > .title_con > h2{}
+#party.full5 > .full_con > .title_con > h4{}
+#party.full5 > .full_con > .title_con > h5{}
+#party.full5 > .full_con > ul.v_con.four_con{}
+#party.full5 > .full_con > ul.v_con.four_con > li.cells{ aspect-ratio: 3/4;}
+#party.full5 > .full_con > ul.v_con.four_con > li.cells > a{}
+#party.full5 > .full_con > ul.v_con.four_con > li.cells > a > img{ height: 100%;}
+#party.full5 > .full_con > ul.v_con.four_con > li.cells > .btn_con{ position: absolute; bottom: var(--mrgn); margin: 0; left: 50%; transform: translateX(-50%);}
+#party.full5 > .full_con > ul.v_con.four_con > li.cells > .btn_con > a{}
+#party.full5 > .full_con > ul.v_con.four_con > li.cells > .btn_con > a > span{}
+#online_service.full6{}
+#online_service.full6:before,
+#online_service.full6:after{ opacity: 0; transition: all 400ms ease-in-out;}
+#online_service.full6:has( a.selected):before{ opacity: .3; transition: all 400ms ease-in-out 250ms;}
+#online_service.full6:has( a.selected):after{ content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--color-k-035); opacity: 1; transition: all 400ms ease-in-out 250ms;}
+#online_service.full6 > .full_con{ opacity: 1; transition: all 400ms ease-in-out;}
+#online_service.full6 > .full_con > .title_con,
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a,
+#online_service.full6 > .full_con.hide > .right_con > .rhombus_con > a.selected{ opacity: 1; transition: all 400ms ease-in-out;}
+#online_service.full6 > .full_con.hide > .title_con,
+#online_service.full6 > .full_con.hide > .right_con > .rhombus_con > a{ pointer-events: none; opacity: 0;  transition: all 250ms ease-in-out;}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a.selected > .text_con{ opacity: 0; transition: all 500ms ease-in-out;}
+#online_service.full6 .full_con:has(> .right_con) > .title_con{ top: 45%; transform: translateY(-50%);}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a.selected:before,
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a.selected:after{ opacity: 0; transition: inherit;}
+#online_service.full6 > .full_con > .title_con > h3{}
+#online_service.full6 > .full_con > .title_con > h2{}
+#online_service.full6 > .full_con > .title_con > h4{}
+#online_service.full6 > .full_con > .title_con > h5{}
+#online_service.full6 .full_con > .right_con{ position: absolute; width: 100%; height: 100%; top: 0; margin: 0 !important;}
+#online_service.full6 .full_con > .right_con > .rhombus_con{ position: absolute; top: 50%; left: 60%; transform: translateY(-50%);}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a{ filter: blur(0); transition: all 500ms ease-in-out;}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a.selected{ transform: skew(45deg, -45deg) scale(10); filter: blur(2px); transition: all 500ms ease-in-out; z-index: 1;}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a > img{}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a > .text_con{ opacity: 1; transition: all 500ms ease-in-out 500ms;}
+#online_service.full6 > .full_con > .right_con > .rhombus_con > a > .text_con > h4{}
+#online_service.full6 > .selected_con{ }
+#online_service.full6 > .selected_con > .full_con{ pointer-events: none; opacity: 0; transition: all 500ms ease-in-out; z-index: 1;}
+#online_service.full6 > .selected_con > .full_con.selected{ pointer-events: auto; opacity: 1; transition: all 500ms ease-in-out;}
+#online_service.full6 > .selected_con > .full_con > .title_con{}
+#online_service.full6 > .selected_con > .full_con > .title_con > h3{}
+#online_service.full6 > .selected_con > .full_con > .title_con > h2{}
+#online_service.full6 > .selected_con > .full_con > .title_con > h4{}
+#online_service.full6 > .selected_con > .full_con > .title_con > h5{}
+#online_service.full6 > .selected_con > .full_con > .title_con > h6{}
+#online_service.full6 > .selected_con > .full_con > .sample{}
+#online_service.full6 > .selected_con > .full_con > .sample > ul.v_con.four_con{}
+#online_service.full6 > .selected_con > .full_con > .sample > ul.v_con.four_con > li.cells{ cursor: pointer;}
+#online_service.full6 > .selected_con > .full_con > .sample > ul.v_con.four_con > li.cells > img{ position: absolute; width: 66.666%;}
+#online_service.full6 > .selected_con > .full_con > .sample > ul.v_con.four_con > li.cells > img.inner_sample{ left: 5%; transition: all 500ms ease-in-out;}
+#online_service.full6 > .selected_con > .full_con > .sample > ul.v_con.four_con > li.cells:hover > img.inner_sample{ left: 25%; transition: all 500ms ease-in-out;}
+#online_service.full6 > .selected_con > .full_con > .rhombus_con.finder_list{ text-align: center;}
+#online_service.full6 > .selected_con > .full_con > .rhombus_con.finder_list > a{ opacity: 0; filter: blur(4px); transition: all 250ms ease-in-out;}
+#online_service.full6 > .selected_con > .full_con.selected > .rhombus_con.finder_list > a{ opacity: 1; filter: blur(0);}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a{ opacity: 1; filter: blur(0); transition: all 400ms ease-in-out;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:first-child{  transition-delay: 100ms;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:nth-child(2){ transition-delay: 500ms;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:nth-child(3){ transition-delay: 200ms;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:nth-child(4){ transition-delay: 600ms;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:nth-child(5){ transition-delay: 300ms;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:nth-child(6){ transition-delay: 700ms;}
+#online_service.full6 > .selected_con > .full_con.selected.on > .rhombus_con.finder_list > a:last-child{   transition-delay: 400ms;}
+#online_service.full6 > .selected_con > .full_con > .rhombus_con.finder_list > a > img{}
+#online_service.full6 > .selected_con > .full_con > .rhombus_con.finder_list > a > .text_con{}
+#online_service.full6 > .selected_con > .full_con > .rhombus_con.finder_list > a > .text_con > h4{ text-shadow: 0 0 2px var(--color-k-065);}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving{}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a{}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a:nth-child(2n-1){ background: none; pointer-events: none;}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a:nth-child(2n-1):before{ opacity: .3;}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a:nth-child(2n-1):after{ opacity: .35;}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a > img{}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a > .text_con{ top: 5%; left: -5%;}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a > .text_con > h5{ top: 40%; font-weight: 400;}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a > .text_con > h4{}
+#online_service.full6 > .selected_con > .full_con > .right_con > .rhombus_con.engraving > a > .text_con > h4.itc{ font-size: 1.25em;}
+#online_service.full6 > .selected_con > .full_con > .btn_close{ top: -3px; right: 2px;}
+#online_service.full6 > .selected_con > .full_con > .btn_close > i{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); transition: all 150ms ease-in-out;}
+#online_service.full6 > .selected_con > .full_con > .btn_close:hover > i{ transform: translate(-70%, -40%) rotate(-45deg); transition: all 150ms ease-in-out;}
