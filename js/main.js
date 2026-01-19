@@ -113,9 +113,9 @@ $(function(){
     for(i=portfolio_list.length - 1; i>0; i--){
         gallery_name = portfolio_list[i][2].replace(/_/g," ");
         gallery_img = portfolio_list[i][2];
-        gallery_cactegory = portfolio_list[i][1];
+        gallery_category = portfolio_list[i][1];
         gallery_num = portfolio_list[i][0];
-        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+gallery_num+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_cactegory+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
+        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+gallery_num+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
     }
     $("#gallery_list").html(gallery_list);
     
