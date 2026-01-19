@@ -110,11 +110,13 @@ $(function(){
         ["web design","jinderberg","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"]
     ];
     var gallery_list = "";
+    var gallery_num;
     for(i=portfolio_list.length - 1; i>0; i--){
         gallery_name = portfolio_list[i][1].replace(/_/g," ");
         gallery_img = portfolio_list[i][1];
         gallery_category = portfolio_list[i][0];
-        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+i+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
+        gallery_num = i;
+        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+gallery_num+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
     }
     $("#gallery_list").html(gallery_list);
     
@@ -130,7 +132,7 @@ $(function(){
             $p_con.find(".tools").html(portfolio_list[p_no][4]);
             $p_con.find(".scope").html(portfolio_list[p_no][5]);
             var p_image_list = "";
-            for(i=1; i<=portfolio_list[p_no][7]; i++){
+            for(i=0; i<=portfolio_list[p_no][7]; i++){
                 p_image_list += "<img class='glass' src='portfolio/gallery/"+p_no+"/"+i+".jpg'>";
             }
             $p_con.find(".image_con").html(p_image_list);
