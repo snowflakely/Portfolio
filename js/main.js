@@ -88,34 +88,33 @@ $(function(){
         ["kilian","web design","Kilian","-","2024","Adobe Photoshop","Web Design, Graphic Design,<br>Front-End Development","","13"],
     ]
     var portfolio_list = [
-        ["순서번호","구분","제목","고객","완료시기","도구","범위","링크","이미지갯수"],
-        ["1","charcter design","saesik","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Emoticon","","1"],
-        ["2","logo design","tenz","Tenz","2023","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","3"],
-        ["3","logo design","hoinz","Hoinz","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","2"],
-        ["4","logo design","jina_edu","Jina Edu","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","2"],
-        ["5","logo design","yuki","Yuki","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","2"],
-        ["6","logo design","youthming","Youthming","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","2"],
-        ["7","logo design","rave","Rave Hair","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","3"],
-        ["8","logo design","naeun","Naeun Beauty","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","2"],
-        ["9","banner design","krush","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","","1"],
-        ["10","banner design","cherry_blossom","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","","1"],
-        ["11","banner design","vigilante","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","","1"],
-        ["12","art work","montblanc","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"],
-        ["13","card news design","kurzgesagt","-","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork","","6"],
-        ["14","poster design","wonka","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","","5"],
-        ["15","web design","saintlaurent","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"],
-        ["16","web design","hmall","-","2024","Adobe Photoshop","Graphic Design, Artwork","","3"],
-        ["17","web design","granhand","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"],
-        ["18","web design","29cm","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"],
-        ["19","web design","jinderberg","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"]
+        //["구분","제목","고객","완료시기","도구","범위","이미지갯수"],
+        ["charcter design","saesik","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Emoticon","1"],
+        ["logo design","tenz","Tenz","2023","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","3"],
+        ["logo design","hoinz","Hoinz","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
+        ["logo design","jina_edu","Jina Edu","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
+        ["logo design","yuki","Yuki","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
+        ["logo design","youthming","Youthming","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
+        ["logo design","rave","Rave Hair","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","3"],
+        ["logo design","naeun","Naeun Beauty","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
+        ["banner design","krush","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","1"],
+        ["banner design","cherry_blossom","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","1"],
+        ["banner design","vigilante","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","1"],
+        ["art work","montblanc","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"],
+        ["card news design","kurzgesagt","-","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork","6"],
+        ["poster design","wonka","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Poster Design","5"],
+        ["web design","saintlaurent","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"],
+        ["web design","hmall","-","2024","Adobe Photoshop","Graphic Design, Artwork","3"],
+        ["web design","granhand","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"],
+        ["web design","29cm","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"],
+        ["web design","jinderberg","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"]
     ];
     var gallery_list = "";
-    for(i=portfolio_list.length - 1; i>0; i--){
-        gallery_name = portfolio_list[i][2].replace(/_/g," ");
-        gallery_img = portfolio_list[i][2];
-        gallery_category = portfolio_list[i][1];
-        gallery_num = portfolio_list[i][0];
-        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+gallery_num+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
+    for(i=portfolio_list.length - 1; i>=0; i--){
+        gallery_name = portfolio_list[i][1].replace(/_/g," ");
+        gallery_img = portfolio_list[i][1];
+        gallery_category = portfolio_list[i][0];
+        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+i+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
     }
     $("#gallery_list").html(gallery_list);
     
@@ -124,14 +123,14 @@ $(function(){
             $(this).addClass("loading");
             var p_no = $(this).attr("data-p-no");
             var $p_con = $(".popup_con");
-            $p_con.find(".category").html(portfolio_list[p_no][1]);
-            $p_con.find(".title").html(portfolio_list[p_no][2].replace(/_/g," "));
-            $p_con.find(".client").html(portfolio_list[p_no][3]);
-            $p_con.find(".completed").html(portfolio_list[p_no][4]);
-            $p_con.find(".tools").html(portfolio_list[p_no][5]);
-            $p_con.find(".scope").html(portfolio_list[p_no][6]);
+            $p_con.find(".category").html(portfolio_list[p_no][0]);
+            $p_con.find(".title").html(portfolio_list[p_no][1].replace(/_/g," "));
+            $p_con.find(".client").html(portfolio_list[p_no][2]);
+            $p_con.find(".completed").html(portfolio_list[p_no][3]);
+            $p_con.find(".tools").html(portfolio_list[p_no][4]);
+            $p_con.find(".scope").html(portfolio_list[p_no][5]);
             var p_image_list = "";
-            for(i=1; i<=portfolio_list[p_no][8]; i++){
+            for(i=1; i<=portfolio_list[p_no][7]; i++){
                 p_image_list += "<img class='glass' src='portfolio/gallery/"+p_no+"/"+i+".jpg'>";
             }
             $p_con.find(".image_con").html(p_image_list);
