@@ -88,8 +88,7 @@ $(function(){
         ["kilian","web design","Kilian","-","2024","Adobe Photoshop","Web Design, Graphic Design,<br>Front-End Development","","13"],
     ]
     var portfolio_list = [
-        ["구분","제목","고객","완료시기","도구","범위","이미지갯수"],
-        ["charcter design","saesik","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Emoticon","1"],
+        ["구분","제목","고객","완료시기","도구","범위","링크","이미지갯수"],
         ["logo design","tenz","Tenz","2023","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","3"],
         ["logo design","hoinz","Hoinz","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
         ["logo design","jina_edu","Jina Edu","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","2"],
@@ -110,13 +109,11 @@ $(function(){
         ["web design","jinderberg","-","2024","Adobe Photoshop","Graphic Design, Artwork","1"]
     ];
     var gallery_list = "";
-    var gallery_num;
-    for(i=portfolio_list.length - 1; i>0; i--){
+    for(i=portfolio_list.length-1; i>0; i--){
         gallery_name = portfolio_list[i][1].replace(/_/g," ");
         gallery_img = portfolio_list[i][1];
         gallery_category = portfolio_list[i][0];
-        gallery_num = i;
-        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+gallery_num+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
+        gallery_list += "<li class='cells open_popup hover_event'data-p-no="+i+"><a href='javascript:;'><div class='box_img'><img src='img/gallery_"+gallery_img+".webp'><div class='text_con'><h4 class='little'>"+gallery_name+"<span>"+gallery_category+"</span></h4></div><div class='loading_snow little'></div></div></a></li>";
     }
     $("#gallery_list").html(gallery_list);
     
