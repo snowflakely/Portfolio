@@ -88,7 +88,7 @@ $(function(){
         ["kilian","web design","Kilian","-","2024","Adobe Photoshop","Web Design, Graphic Design,<br>Front-End Development","","13"],
     ]
     var portfolio_list = [
-        ["순서번호","구분","제목","고객","완료시기","도구","범위","링크","이미지갯수"],
+        //["순서번호","구분","제목","고객","완료시기","도구","범위","링크","이미지갯수"],
         //["1","charcter design","saesik","-","2024","Adobe Photoshop","Graphic Design, Artwork,<br>Emoticon","","1"],
         ["2","logo design","tenz","Tenz","2023","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","3"],
         ["3","logo design","hoinz","Hoinz","2024","Adobe Photoshop,<br>Adobe Illustrator","Graphic Design, Artwork,<br>Logo Design","","2"],
@@ -110,7 +110,7 @@ $(function(){
         ["19","web design","jinderberg","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"]
     ];
     var gallery_list = "";
-    for(i=portfolio_list.length-1; i>0; i--){
+    for(i=portfolio_list.length; i>0; i--){
         gallery_name = portfolio_list[i][2].replace(/_/g," ");
         gallery_img = portfolio_list[i][2];
         gallery_cactegory = portfolio_list[i][1];
