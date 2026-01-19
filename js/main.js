@@ -132,7 +132,7 @@ $(function(){
             $p_con.find(".tools").html(portfolio_list[p_no][4]);
             $p_con.find(".scope").html(portfolio_list[p_no][5]);
             var p_image_list = "";
-            for(i=0; i<=portfolio_list[p_no][7]; i++){
+            for(i=1; i<=portfolio_list[p_no][6]; i++){
                 p_image_list += "<img class='glass' src='portfolio/gallery/"+p_no+"/"+i+".jpg'>";
             }
             $p_con.find(".image_con").html(p_image_list);
