@@ -110,7 +110,7 @@ $(function(){
         ["19","web design","jinderberg","-","2024","Adobe Photoshop","Graphic Design, Artwork","","1"]
     ];
     var gallery_list = "";
-    for(i=portfolio_list.length - 1; i>0; i--){
+    for(i=portfolio_list.length - 1; i=0; i--){
         gallery_name = portfolio_list[i][2].replace(/_/g," ");
         gallery_img = portfolio_list[i][2];
         gallery_category = portfolio_list[i][1];
